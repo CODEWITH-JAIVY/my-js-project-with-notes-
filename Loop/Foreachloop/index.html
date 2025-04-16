@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>forEach Example</title>
+</head>
+<body>
+  <h2>Usernames:</h2>
+  <ul id="userList"></ul>
+
+  <script>
+    const users = ["Aman", "Ravi", "Simran", "Priya", "Sahil"];
+
+    const listElement = document.getElementById("userList");
+
+    users.forEach(function(user) {
+      // Create a new <li> element
+      const listItem = document.createElement("li");
+
+      // Set the text to the user's name
+      listItem.textContent = user;
+
+      // Add the <li> to the <ul>
+      listElement.appendChild(listItem);
+
+      // Optional: log in console
+      console.log("User added:", user);
+    });
+  </script>
+</body>
+</html>

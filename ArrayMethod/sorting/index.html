@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="sortElement"> sortElement </button>
+     <p id="result">
+
+     </p>
+    <script> 
+        const element  = document.getElementById("sortElement")
+        const result  = document.getElementById("result")
+        let arr = [ 1,2,6,5,9,87,8,2,5,8,10] 
+
+
+       element.addEventListener( "click" , function () {
+         arr.sort(function (a , b ) { return  b -a  ;   }) ;
+         result.innerHTML = arr.join( ", ")
+
+
+       } ) ;
+        
+
+    </script>
+</body>
+</html>
